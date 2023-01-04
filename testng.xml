@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="CRM Test Suite">
+
+<listeners>
+<listener class-name = "com.qa.ExtentReportListener.ExtentReporterNG" />
+</listeners>
+  <test name="CRM Test">
+    <classes>
+      <class name="com.crm.qa.testcases.ContactsPageTest"/>
+      <class name="com.crm.qa.testcases.HomePageTest"/>
+      <class name="com.crm.qa.testcases.LoginPageTest"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
