@@ -9,17 +9,17 @@ import com.crm.qa.base.TestBase;
 
 public class HomePage extends TestBase {
 
-	@FindBy(xpath="//a[contains(text(), 'Contacts')]")
+	@FindBy(xpath="//a[contains(text(), 'contacts')]")
 	WebElement contactsLink;
 	
-	@FindBy(xpath="//a[contains(text(), 'New Contacts')]")
+	@FindBy(xpath="//a[contains(text(), '/contacts/new')]")
 	WebElement newcontactsLink;
 	
 	
-	@FindBy(xpath="//a[contains(text(), 'Deals')]")
+	@FindBy(xpath="//a[contains(text(), 'deals')]")
 	WebElement dealsLink;
 	
-	@FindBy(xpath="//a[contains(text(), 'Tasks')]")
+	@FindBy(xpath="//a[contains(text(), 'tasks')]")
 	WebElement tasksLink;
 	
 	//Initializing the Page Objects:

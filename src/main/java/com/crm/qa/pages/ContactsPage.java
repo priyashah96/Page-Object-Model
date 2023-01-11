@@ -10,7 +10,7 @@ import com.crm.qa.base.TestBase;
 
 public class ContactsPage extends TestBase {
 
-	@FindBy(xpath="//a[contains(text(), 'Contacts')]")
+	@FindBy(xpath="//a[contains(text(), 'contacts')]")
 	WebElement contactsLabel;
 	
 	@FindBy(name= "first_name")

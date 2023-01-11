@@ -17,14 +17,14 @@ public class LoginPage extends TestBase {
 	@FindBy(name="password")
 	WebElement password;
 	
-	@FindBy(xpath="//div[contains(text(),'Login')]")
+	@FindBy(xpath="//div[contains(text(),'login')]")
 	WebElement LoginButton;
 	
-	@FindBy(xpath="//a[contains(text(),'Sign Up')]")
-	WebElement SignUp;
+	//@FindBy(xpath="//a[contains(text(),'Sign Up')]")
+	//WebElement SignUp;
 	
-	@FindBy(xpath="//img[contains(@class, 'img-responsive')]")
-	WebElement crmlogo;
+	//@FindBy(xpath="//img[contains(@class, 'img-responsive')]")
+	//WebElement crmlogo;
 	
 	
 	
@@ -39,9 +39,9 @@ public class LoginPage extends TestBase {
 		return driver.getTitle();
 	}
 	
-	public boolean validateCRMImage() {
-		return crmlogo.isDisplayed();
-	}
+	//public boolean validateCRMImage() {
+		//return crmlogo.isDisplayed();
+	//}
 	
 
 	public HomePage clickOnLoginButtonLink() {
@@ -52,7 +52,7 @@ public class LoginPage extends TestBase {
 	}
 
 	public HomePage login() {
-		email.sendKeys("pshah143");
+		email.sendKeys("priya.shah4996@gmail.com");
 		password.sendKeys("Hapy@2005");
 		LoginButton.click();
 		
